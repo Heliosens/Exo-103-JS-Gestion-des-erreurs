@@ -1,9 +1,9 @@
 let result = document.getElementById('text');
+
 try {
     result.innerHTML = "Tentative";
 }
 catch (e) {
-    alert(`
-    result : ${e.message}
-    `);
+    alert(`${e.name} result n'existe pas`);
 }
+
